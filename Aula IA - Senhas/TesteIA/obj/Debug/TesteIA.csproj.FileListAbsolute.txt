@@ -1,0 +1,7 @@
+E:\Usuários\0077113\source\repos\TesteIA\TesteIA\obj\Debug\TesteIA.csproj.AssemblyReference.cache
+E:\Usuários\0077113\source\repos\TesteIA\TesteIA\obj\Debug\TesteIA.csproj.CoreCompileInputs.cache
+E:\Usuários\0077113\source\repos\TesteIA\TesteIA\bin\Debug\TesteIA.exe.config
+E:\Usuários\0077113\source\repos\TesteIA\TesteIA\bin\Debug\TesteIA.exe
+E:\Usuários\0077113\source\repos\TesteIA\TesteIA\bin\Debug\TesteIA.pdb
+E:\Usuários\0077113\source\repos\TesteIA\TesteIA\obj\Debug\TesteIA.exe
+E:\Usuários\0077113\source\repos\TesteIA\TesteIA\obj\Debug\TesteIA.pdb

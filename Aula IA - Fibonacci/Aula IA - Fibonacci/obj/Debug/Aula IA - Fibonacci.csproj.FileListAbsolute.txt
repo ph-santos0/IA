@@ -1,0 +1,7 @@
+E:\Usuários\0077113\Documents\Visual Studio 2022\Aulas\Aula IA - Fibonacci\Aula IA - Fibonacci\bin\Debug\Aula IA - Fibonacci.exe.config
+E:\Usuários\0077113\Documents\Visual Studio 2022\Aulas\Aula IA - Fibonacci\Aula IA - Fibonacci\bin\Debug\Aula IA - Fibonacci.exe
+E:\Usuários\0077113\Documents\Visual Studio 2022\Aulas\Aula IA - Fibonacci\Aula IA - Fibonacci\bin\Debug\Aula IA - Fibonacci.pdb
+E:\Usuários\0077113\Documents\Visual Studio 2022\Aulas\Aula IA - Fibonacci\Aula IA - Fibonacci\obj\Debug\Aula IA - Fibonacci.csproj.AssemblyReference.cache
+E:\Usuários\0077113\Documents\Visual Studio 2022\Aulas\Aula IA - Fibonacci\Aula IA - Fibonacci\obj\Debug\Aula IA - Fibonacci.csproj.CoreCompileInputs.cache
+E:\Usuários\0077113\Documents\Visual Studio 2022\Aulas\Aula IA - Fibonacci\Aula IA - Fibonacci\obj\Debug\Aula IA - Fibonacci.exe
+E:\Usuários\0077113\Documents\Visual Studio 2022\Aulas\Aula IA - Fibonacci\Aula IA - Fibonacci\obj\Debug\Aula IA - Fibonacci.pdb
