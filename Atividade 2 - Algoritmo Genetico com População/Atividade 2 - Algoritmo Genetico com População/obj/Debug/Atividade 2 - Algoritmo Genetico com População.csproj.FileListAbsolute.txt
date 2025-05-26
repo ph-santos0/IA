@@ -1,0 +1,8 @@
+D:\IFMG\Matérias\IA\Atividade 2 - Algoritmo Genetico com População\Atividade 2 - Algoritmo Genetico com População\bin\Debug\Atividade 2 - Algoritmo Genetico com População.exe.config
+D:\IFMG\Matérias\IA\Atividade 2 - Algoritmo Genetico com População\Atividade 2 - Algoritmo Genetico com População\bin\Debug\Atividade 2 - Algoritmo Genetico com População.exe
+D:\IFMG\Matérias\IA\Atividade 2 - Algoritmo Genetico com População\Atividade 2 - Algoritmo Genetico com População\bin\Debug\Atividade 2 - Algoritmo Genetico com População.pdb
+D:\IFMG\Matérias\IA\Atividade 2 - Algoritmo Genetico com População\Atividade 2 - Algoritmo Genetico com População\obj\Debug\Atividade 2 - Algoritmo Genetico com População.csproj.AssemblyReference.cache
+D:\IFMG\Matérias\IA\Atividade 2 - Algoritmo Genetico com População\Atividade 2 - Algoritmo Genetico com População\obj\Debug\Atividade 2 - Algoritmo Genetico com População.csproj.CoreCompileInputs.cache
+D:\IFMG\Matérias\IA\Atividade 2 - Algoritmo Genetico com População\Atividade 2 - Algoritmo Genetico com População\obj\Debug\Atividade 2 - Algoritmo Genetico com População.exe
+D:\IFMG\Matérias\IA\Atividade 2 - Algoritmo Genetico com População\Atividade 2 - Algoritmo Genetico com População\obj\Debug\Atividade 2 - Algoritmo Genetico com População.pdb
+D:\IFMG\Matérias\IA\Atividade 2 - Algoritmo Genetico com População\Atividade 2 - Algoritmo Genetico com População\obj\Debug\Atividade 2 - Algoritmo Genetico com População.exe.config
