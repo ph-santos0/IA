@@ -1,0 +1,7 @@
+E:\Usuários\0077113\Documents\Visual Studio 2022\Códigos\IA\Atividade 1 - Programação Evolutava\Atividade 1 - Programação Evolutava\bin\Debug\Atividade 1 - Programação Evolutava.exe.config
+E:\Usuários\0077113\Documents\Visual Studio 2022\Códigos\IA\Atividade 1 - Programação Evolutava\Atividade 1 - Programação Evolutava\bin\Debug\Atividade 1 - Programação Evolutava.exe
+E:\Usuários\0077113\Documents\Visual Studio 2022\Códigos\IA\Atividade 1 - Programação Evolutava\Atividade 1 - Programação Evolutava\bin\Debug\Atividade 1 - Programação Evolutava.pdb
+E:\Usuários\0077113\Documents\Visual Studio 2022\Códigos\IA\Atividade 1 - Programação Evolutava\Atividade 1 - Programação Evolutava\obj\Debug\Atividade 1 - Programação Evolutava.csproj.AssemblyReference.cache
+E:\Usuários\0077113\Documents\Visual Studio 2022\Códigos\IA\Atividade 1 - Programação Evolutava\Atividade 1 - Programação Evolutava\obj\Debug\Atividade 1 - Programação Evolutava.csproj.CoreCompileInputs.cache
+E:\Usuários\0077113\Documents\Visual Studio 2022\Códigos\IA\Atividade 1 - Programação Evolutava\Atividade 1 - Programação Evolutava\obj\Debug\Atividade 1 - Programação Evolutava.exe
+E:\Usuários\0077113\Documents\Visual Studio 2022\Códigos\IA\Atividade 1 - Programação Evolutava\Atividade 1 - Programação Evolutava\obj\Debug\Atividade 1 - Programação Evolutava.pdb
