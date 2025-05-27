@@ -1,8 +1,0 @@
-D:\IFMG\Matérias\IA\Atividade 1 - Algoritmo Genetico\Atividade 1 - Algoritmo Genetico\bin\Debug\Atividade 1 - Algoritmo Genetico.exe.config
-D:\IFMG\Matérias\IA\Atividade 1 - Algoritmo Genetico\Atividade 1 - Algoritmo Genetico\bin\Debug\Atividade 1 - Algoritmo Genetico.exe
-D:\IFMG\Matérias\IA\Atividade 1 - Algoritmo Genetico\Atividade 1 - Algoritmo Genetico\bin\Debug\Atividade 1 - Algoritmo Genetico.pdb
-D:\IFMG\Matérias\IA\Atividade 1 - Algoritmo Genetico\Atividade 1 - Algoritmo Genetico\obj\Debug\Atividade 1 - Algoritmo Genetico.csproj.AssemblyReference.cache
-D:\IFMG\Matérias\IA\Atividade 1 - Algoritmo Genetico\Atividade 1 - Algoritmo Genetico\obj\Debug\Atividade 1 - Algoritmo Genetico.csproj.CoreCompileInputs.cache
-D:\IFMG\Matérias\IA\Atividade 1 - Algoritmo Genetico\Atividade 1 - Algoritmo Genetico\obj\Debug\Atividade 1 - Algoritmo Genetico.exe
-D:\IFMG\Matérias\IA\Atividade 1 - Algoritmo Genetico\Atividade 1 - Algoritmo Genetico\obj\Debug\Atividade 1 - Algoritmo Genetico.pdb
-D:\IFMG\Matérias\IA\Atividade 1 - Algoritmo Genetico\Atividade 1 - Algoritmo Genetico\obj\Debug\Atividade 1 - Algoritmo Genetico.exe.config
