@@ -36,7 +36,6 @@ namespace Atividade_4___Algoritmo_Guloso_com_Algoritmos_Genéticos
                         double diferenca = troco - totalMoedas;
                         int totalMoedasUsadas = qtd20 + qtd11 + qtd5 + qtd1;
 
-                        // Se a diferença for menor que a melhor até agora
                         if (diferenca < melhorDiferenca)
                         {
                             melhorDiferenca = diferenca;
@@ -46,7 +45,6 @@ namespace Atividade_4___Algoritmo_Guloso_com_Algoritmos_Genéticos
                             melhor5 = qtd5;
                             melhor1 = qtd1;
                         }
-                        // Se a diferença for igual a melhor e tiver menos moedas
                         else if (diferenca == melhorDiferenca && totalMoedasUsadas < melhorTotalMoedas)
                         {
                             melhorDiferenca = diferenca;
