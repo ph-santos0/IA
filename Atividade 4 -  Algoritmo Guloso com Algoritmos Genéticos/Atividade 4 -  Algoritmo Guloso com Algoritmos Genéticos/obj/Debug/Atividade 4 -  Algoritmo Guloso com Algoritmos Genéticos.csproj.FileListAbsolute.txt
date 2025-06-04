@@ -1,0 +1,8 @@
+D:\IFMG\Matérias\IA\Atividade 4 -  Algoritmo Guloso com Algoritmos Genéticos\Atividade 4 -  Algoritmo Guloso com Algoritmos Genéticos\bin\Debug\Atividade 4 -  Algoritmo Guloso com Algoritmos Genéticos.exe.config
+D:\IFMG\Matérias\IA\Atividade 4 -  Algoritmo Guloso com Algoritmos Genéticos\Atividade 4 -  Algoritmo Guloso com Algoritmos Genéticos\bin\Debug\Atividade 4 -  Algoritmo Guloso com Algoritmos Genéticos.exe
+D:\IFMG\Matérias\IA\Atividade 4 -  Algoritmo Guloso com Algoritmos Genéticos\Atividade 4 -  Algoritmo Guloso com Algoritmos Genéticos\bin\Debug\Atividade 4 -  Algoritmo Guloso com Algoritmos Genéticos.pdb
+D:\IFMG\Matérias\IA\Atividade 4 -  Algoritmo Guloso com Algoritmos Genéticos\Atividade 4 -  Algoritmo Guloso com Algoritmos Genéticos\obj\Debug\Atividade 4 -  Algoritmo Guloso com Algoritmos Genéticos.csproj.AssemblyReference.cache
+D:\IFMG\Matérias\IA\Atividade 4 -  Algoritmo Guloso com Algoritmos Genéticos\Atividade 4 -  Algoritmo Guloso com Algoritmos Genéticos\obj\Debug\Atividade 4 -  Algoritmo Guloso com Algoritmos Genéticos.csproj.CoreCompileInputs.cache
+D:\IFMG\Matérias\IA\Atividade 4 -  Algoritmo Guloso com Algoritmos Genéticos\Atividade 4 -  Algoritmo Guloso com Algoritmos Genéticos\obj\Debug\Atividade 4 -  Algoritmo Guloso com Algoritmos Genéticos.exe
+D:\IFMG\Matérias\IA\Atividade 4 -  Algoritmo Guloso com Algoritmos Genéticos\Atividade 4 -  Algoritmo Guloso com Algoritmos Genéticos\obj\Debug\Atividade 4 -  Algoritmo Guloso com Algoritmos Genéticos.pdb
+D:\IFMG\Matérias\IA\Atividade 4 -  Algoritmo Guloso com Algoritmos Genéticos\Atividade 4 -  Algoritmo Guloso com Algoritmos Genéticos\obj\Debug\Atividade 4 -  Algoritmo Guloso com Algoritmos Genéticos.exe.config
