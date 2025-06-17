@@ -1,0 +1,8 @@
+D:\IFMG\Matérias\IA\Atividade 5 - Encontrar Função Geradora\Atividade 5 - Encontrar Função Geradora\bin\Debug\Atividade 5 - Encontrar Função Geradora.exe.config
+D:\IFMG\Matérias\IA\Atividade 5 - Encontrar Função Geradora\Atividade 5 - Encontrar Função Geradora\bin\Debug\Atividade 5 - Encontrar Função Geradora.exe
+D:\IFMG\Matérias\IA\Atividade 5 - Encontrar Função Geradora\Atividade 5 - Encontrar Função Geradora\bin\Debug\Atividade 5 - Encontrar Função Geradora.pdb
+D:\IFMG\Matérias\IA\Atividade 5 - Encontrar Função Geradora\Atividade 5 - Encontrar Função Geradora\obj\Debug\Atividade 5 - Encontrar Função Geradora.csproj.AssemblyReference.cache
+D:\IFMG\Matérias\IA\Atividade 5 - Encontrar Função Geradora\Atividade 5 - Encontrar Função Geradora\obj\Debug\Atividade 5 - Encontrar Função Geradora.csproj.CoreCompileInputs.cache
+D:\IFMG\Matérias\IA\Atividade 5 - Encontrar Função Geradora\Atividade 5 - Encontrar Função Geradora\obj\Debug\Atividade 5 - Encontrar Função Geradora.exe
+D:\IFMG\Matérias\IA\Atividade 5 - Encontrar Função Geradora\Atividade 5 - Encontrar Função Geradora\obj\Debug\Atividade 5 - Encontrar Função Geradora.pdb
+D:\IFMG\Matérias\IA\Atividade 5 - Encontrar Função Geradora\Atividade 5 - Encontrar Função Geradora\obj\Debug\Atividade 5 - Encontrar Função Geradora.exe.config
