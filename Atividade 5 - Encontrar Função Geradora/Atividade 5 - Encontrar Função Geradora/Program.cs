@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 class Program
@@ -10,7 +10,7 @@ class Program
         List<int> entradas = new List<int>() { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
         List<int> saidas_esperadas = new List<int>() { 6, 2, 0, 0, 2, 6, 12, 20, 30, 42, 56 };
 
-        int tamanhoPopulacao = 10;
+        int tamanhoPopulacao = 20;
         int totalGeracoes = 1000;
 
         double[] melhorIndividuo = new double[3];
@@ -119,7 +119,7 @@ class Program
         {
             double x = entradas[i];
             double y = melhorIndividuo[0] * x * x + melhorIndividuo[1] * x + melhorIndividuo[2];
-            Console.WriteLine($"Esperado = {saidas_esperadas[i]} \t| Obtido = {Math.Round(y, 4)}");
+            Console.WriteLine($"X = {x}\t| Esperado = {saidas_esperadas[i]}\t| Obtido = {Math.Round(y, 4)}");
         }
 
         // Tenta arredondar coeficientes e testa se a função arredondada funciona perfeitamente
@@ -149,7 +149,7 @@ class Program
             {
                 int x = entradas[i];
                 int y = aInt * (x * x) + bInt * x + cInt;
-                Console.WriteLine($"Esperado = {saidas_esperadas[i]} \t| Obtido = {y}");
+                Console.WriteLine($"X = {x}\t| Esperado = {saidas_esperadas[i]}\t| Obtido = {y}");
             }
         }
         else
