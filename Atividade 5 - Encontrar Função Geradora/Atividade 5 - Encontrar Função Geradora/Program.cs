@@ -1,160 +1,146 @@
 using System;
 using System.Collections.Generic;
+using System.Data;
 
 class Program
 {
+    static Random rand = new Random();
+    static string[] operadores = { "+", "-", "*", "/" };
+    static string[] terminais = { "x", "1", "2", "3", "4", "5" };
+
     static void Main()
     {
-        Random rand = new Random();
+        List<int> entradas = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        List<int> saidas = new List<int> { 6, 2, 0, 0, 2, 6, 12, 20, 30, 42, 56 };
 
-        List<int> entradas = new List<int>() { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-        List<int> saidas_esperadas = new List<int>() { 6, 2, 0, 0, 2, 6, 12, 20, 30, 42, 56 };
+        int tamanhoPop = 100;
+        int geracoes = 1000;
 
-        int tamanhoPopulacao = 20;
-        int totalGeracoes = 1000;
+        List<string> populacao = new List<string>();
+        for (int i = 0; i < tamanhoPop; i++)
+            populacao.Add(GerarExpressao(3));
 
-        double[] melhorIndividuo = new double[3];
-        double menorErro = double.MaxValue;
+        string melhor = "";
+        double melhorErro = double.MaxValue;
 
-        List<double[]> populacao = new List<double[]>();
-
-        // Geração inicial aleatória
-        for (int i = 0; i < tamanhoPopulacao; i++)
+        for (int g = 0; g < geracoes; g++)
         {
-            populacao.Add(new double[] {
-                rand.NextDouble() * 20 - 10,
-                rand.NextDouble() * 20 - 10,
-                rand.NextDouble() * 20 - 10
-            });
-        }
-
-        for (int geracao = 0; geracao < totalGeracoes; geracao++)
-        {
-            List<double[]> melhoresIndividuos = new List<double[]>();
-            List<double> erros = new List<double>();
-
-            // Avalia erro de cada indivíduo
-            foreach (var individuo in populacao)
+            List<(string, double)> avaliados = new List<(string, double)>();
+            foreach (string ind in populacao)
             {
-                double erro = 0;
-                for (int i = 0; i < entradas.Count; i++)
+                double erro = CalcularErro(ind, entradas, saidas);
+                avaliados.Add((ind, erro));
+                if (erro < melhorErro)
                 {
-                    double x = entradas[i];
-                    double y = individuo[0] * x * x + individuo[1] * x + individuo[2];
-                    double diff = y - saidas_esperadas[i];
-                    erro += diff * diff;
-                }
-                erros.Add(erro);
-                melhoresIndividuos.Add(individuo);
-            }
-
-            // Ordena por erro (bubble sort simples)
-            for (int i = 0; i < tamanhoPopulacao - 1; i++)
-            {
-                for (int j = i + 1; j < tamanhoPopulacao; j++)
-                {
-                    if (erros[j] < erros[i])
-                    {
-                        double tempErro = erros[i];
-                        erros[i] = erros[j];
-                        erros[j] = tempErro;
-
-                        double[] tempInd = melhoresIndividuos[i];
-                        melhoresIndividuos[i] = melhoresIndividuos[j];
-                        melhoresIndividuos[j] = tempInd;
-                    }
+                    melhorErro = erro;
+                    melhor = ind;
+                    Console.WriteLine($"G{g} Melhor: {melhor} | Erro: {erro:F2}");
                 }
             }
 
-            // Atualiza melhor indivíduo
-            if (erros[0] < menorErro)
+            avaliados.Sort((a, b) => a.Item2.CompareTo(b.Item2));
+            List<string> novaPop = new List<string> { avaliados[0].Item1, avaliados[1].Item1 };
+
+            while (novaPop.Count < tamanhoPop)
             {
-                melhorIndividuo = melhoresIndividuos[0];
-                menorErro = erros[0];
-                Console.WriteLine($"Geração {geracao} - f(x) = {melhorIndividuo[0]:F4}x² + {melhorIndividuo[1]:F4}x + {melhorIndividuo[2]:F4} | Erro: {menorErro:F6}");
+                string pai1 = avaliados[rand.Next(5)].Item1;
+                string pai2 = avaliados[rand.Next(5)].Item1;
+                string filho = rand.NextDouble() < 0.5 ? Recombinar(pai1, pai2) : Mutar(pai1);
+                novaPop.Add(filho);
             }
 
-            List<double[]> novaGeracao = new List<double[]>();
-
-            // mantém 2 melhores
-            novaGeracao.Add(melhoresIndividuos[0]);
-            novaGeracao.Add(melhoresIndividuos[1]);
-
-            // Recombinação (cruzamento) + mutação
-            for (int i = 0; i < (tamanhoPopulacao / 2) - 1; i++)
-            {
-                var pai1 = melhoresIndividuos[i];
-                var pai2 = melhoresIndividuos[i + 1];
-
-                double a = (pai1[0] + pai2[0]) / 2;
-                double b = (pai1[1] + pai2[1]) / 2;
-                double c = (pai1[2] + pai2[2]) / 2;
-
-                if (rand.NextDouble() < 0.2) a += rand.NextDouble() - 0.5;
-                if (rand.NextDouble() < 0.2) b += rand.NextDouble() - 0.5;
-                if (rand.NextDouble() < 0.2) c += rand.NextDouble() - 0.5;
-
-                novaGeracao.Add(new double[] { a, b, c });
-            }
-
-            // Completa população com novos aleatórios
-            while (novaGeracao.Count < tamanhoPopulacao)
-            {
-                novaGeracao.Add(new double[] {
-                    rand.NextDouble() * 20 - 10,
-                    rand.NextDouble() * 20 - 10,
-                    rand.NextDouble() * 20 - 10
-                });
-            }
-
-            populacao = novaGeracao;
+            populacao = novaPop;
         }
 
-        Console.WriteLine("\nMelhor função encontrada:");
-        Console.WriteLine($"f(x) = {melhorIndividuo[0]:F4}x² + {melhorIndividuo[1]:F4}x + {melhorIndividuo[2]:F4}");
-        Console.WriteLine($"Erro total: {menorErro:F6}");
+        Console.WriteLine($"\nMelhor expressão final: {melhor}");
+        foreach (var x in entradas)
+        {
+            double y = Avaliar(melhor, x);
+            Console.WriteLine($"x={x} | esperado={saidas[x]} | obtido={Math.Round(y, 2)}");
+        }
+    }
 
-        Console.WriteLine("\nComparação entre saídas esperadas e calculadas:");
+    static string GerarExpressao(int profundidade)
+    {
+        if (profundidade == 0)
+            return terminais[rand.Next(terminais.Length)];
+        string op = operadores[rand.Next(operadores.Length)];
+        string esq = GerarExpressao(profundidade - 1);
+        string dir = GerarExpressao(profundidade - 1);
+        return $"({esq} {op} {dir})";
+    }
+
+    static double Avaliar(string expr, int x)
+    {
+        try
+        {
+            string e = expr.Replace("x", x.ToString());
+            var table = new DataTable();
+            var result = table.Compute(e, "");
+            return Convert.ToDouble(result);
+        }
+        catch { return double.MaxValue; }
+    }
+
+    static double CalcularErro(string expr, List<int> entradas, List<int> saidas)
+    {
+        double erro = 0;
         for (int i = 0; i < entradas.Count; i++)
         {
-            double x = entradas[i];
-            double y = melhorIndividuo[0] * x * x + melhorIndividuo[1] * x + melhorIndividuo[2];
-            Console.WriteLine($"X = {x}\t| Esperado = {saidas_esperadas[i]}\t| Obtido = {Math.Round(y, 4)}");
+            double y = Avaliar(expr, entradas[i]);
+            double diff = y - saidas[i];
+            erro += diff * diff;
         }
+        return erro;
+    }
 
-        // Tenta arredondar coeficientes e testa se a função arredondada funciona perfeitamente
-        int aInt = (int)Math.Round(melhorIndividuo[0]);
-        int bInt = (int)Math.Round(melhorIndividuo[1]);
-        int cInt = (int)Math.Round(melhorIndividuo[2]);
+    static string Recombinar(string a, string b)
+    {
+        int i = EncontrarSubexpressaoInicio(a);
+        int j = EncontrarSubexpressaoInicio(b);
+        if (i == -1 || j == -1) return a;
 
-        bool funciona = true;
-        for (int i = 0; i < entradas.Count; i++)
+        string subA = ExtrairSubexpressao(a, i);
+        string subB = ExtrairSubexpressao(b, j);
+
+        if (subA == "" || subB == "") return a;
+
+        return a.Substring(0, i) + subB + a.Substring(i + subA.Length);
+    }
+
+    static string Mutar(string expr)
+    {
+        int i = EncontrarSubexpressaoInicio(expr);
+        if (i == -1) return expr;
+        string antiga = ExtrairSubexpressao(expr, i);
+        string nova = GerarExpressao(2);
+        return expr.Substring(0, i) + nova + expr.Substring(i + antiga.Length);
+    }
+
+    static int EncontrarSubexpressaoInicio(string expr)
+    {
+        List<int> abertos = new List<int>();
+        for (int i = 0; i < expr.Length; i++)
         {
-            int x = entradas[i];
-            int yArredondado = aInt * (x * x) + bInt * x + cInt;
-            if (yArredondado != saidas_esperadas[i])
+            if (expr[i] == '(') abertos.Add(i);
+            else if (expr[i] == ')' && abertos.Count > 0)
             {
-                funciona = false;
-                break;
+                int ini = abertos[rand.Next(abertos.Count)];
+                return ini;
             }
         }
+        return -1;
+    }
 
-        if (funciona)
+    static string ExtrairSubexpressao(string expr, int ini)
+    {
+        int cont = 0;
+        for (int i = ini; i < expr.Length; i++)
         {
-            Console.WriteLine("\nFunção arredondada funciona perfeitamente:");
-            Console.WriteLine($"f(x) = {aInt}x² + {bInt}x + {cInt}");
-
-            Console.WriteLine("\nComparação com função arredondada:");
-            for (int i = 0; i < entradas.Count; i++)
-            {
-                int x = entradas[i];
-                int y = aInt * (x * x) + bInt * x + cInt;
-                Console.WriteLine($"X = {x}\t| Esperado = {saidas_esperadas[i]}\t| Obtido = {y}");
-            }
+            if (expr[i] == '(') cont++;
+            else if (expr[i] == ')') cont--;
+            if (cont == 0) return expr.Substring(ini, i - ini + 1);
         }
-        else
-        {
-            Console.WriteLine("\nFunção arredondada não bate exatamente.");
-        }
+        return "";
     }
 }
