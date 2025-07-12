@@ -19,7 +19,7 @@ casal_possivel(Homem, Mulher) :-
     pessoa(Mulher, fem, _, AltM, _),
     AltH > AltM.
 
-% Consultas (comentadas):
+% Consultas:
 % ?- mulher_mais_20(Nome).       % Mulheres com mais de 20 anos
 % ?- altura_peso(Nome).          % Pessoas com altura >= 1.70m e peso < 65kg
 % ?- casal_possivel(Homem, Mulher). % Casais onde o homem é mais alto que a mulher
