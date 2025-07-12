@@ -62,7 +62,7 @@ feliz(X) :- gerou(X, _).
 % Casal (têm filhos em comum)
 casal(X, Y) :- gerou(X, Z), gerou(Y, Z), X \== Y.
 
-% Consultas (comentadas)
+% Consultas
 % ?- gerou(X, eva).              % Deve retornar X = ivo ; X = ana.
 % ?- filha(clo, bia).            % true
 % ?- tio(X, noe).                % Deve retornar X = rai ; X = ary.
